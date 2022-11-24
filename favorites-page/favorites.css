@@ -1,0 +1,84 @@
+main{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.favorites-page{
+    width: 90%;
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0px;
+    gap: 10px 100px;
+    background-color: rgb(0, 0, 0, .1);
+    border-radius: 20px;
+    box-shadow: var(--dull-blue) 0px 50px 50px -20px, 
+                var(--dull-blue) 0px 30px 30px -30px, 
+                var(--dull-blue) 0px -2px 6px 0px inset;
+    color: var(--dull-blue);
+    padding: 100px;
+}
+
+.container-fav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 320px;
+    border: 1px solid var(--acc-color);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .about{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box .cover{
+    width: 125px;
+    height: 175px;
+    border-radius: 5px;
+}
+
+.container-fav .fa-trash-can{
+    color: var(--heart);
+    margin-left: 150px;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.buy .fa-basket-shopping{
+    color: var(--cart);
+    font-size: 20px;
+}
+
+.container-fav i:hover{
+    scale: 1.1;
+}

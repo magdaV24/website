@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="home-page\home.css">
+    <link rel="stylesheet" href="for-all-pages\styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="bookstore-name"><a href="home-page\home.html">Athena</i></a></div>
+        <div class="wrapper">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-bar" type="text" placeholder="Search anything...">
+                <ul class="search-result"></ul>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="favorites-page\favorites.html" target="_blank">
+                <div class="heart-counter">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="counter" id="heart-counter">0</div>
+                </div>
+            </a>
+            <a href="cart-page\cart.html" target="_blank">
+                <div class="shop-counter">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="counter" id="cart-counter">0</div>
+                </div>
+            </a>
+        </div>
+        <div class="clock">
+            <div class="hours tile">0</div>
+            <div class="minutes tile">0</div>
+            <div class="seconds tile">0</div>
+        </div>
+        <div class="theme">
+            <i class="fa-solid fa-palette"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-one">
+            <div class="container">
+                <div class="about">
+                    <img src="home-page\site-photo.jpg" alt="">
+                    <p>We have a diverse selection of books from many generes or time periods. Take a look and find your
+                        next world to emerge in!</p>
+                </div>
+                <div class="stars">
+                    <i class="fa-regular fa-star" style="--i: 1"></i>
+                    <i class="fa-regular fa-star" style="--i: 3"></i>
+                    <i class="fa-regular fa-star" style="--i: 2"></i>
+                    <i class="fa-regular fa-star" style="--i: 5"></i>
+                    <i class="fa-regular fa-star" style="--i: 1"></i>
+                    <i class="fa-regular fa-star" style="--i: 1"></i>
+                    <i class="fa-regular fa-star" style="--i: 4"></i>
+                    <i class="fa-regular fa-star" style="--i: 1"></i>
+                    <i class="fa-regular fa-star" style="--i: 5"></i>
+                    <i class="fa-regular fa-star" style="--i: 2"></i>
+                    <i class="fa-regular fa-star" style="--i: 1"></i>
+                    <i class="fa-regular fa-star" style="--i: 2"></i>
+                    <i class="fa-regular fa-star" style="--i: 4"></i>
+                    <i class="fa-regular fa-star" style="--i: 3"></i>
+                    <i class="fa-regular fa-star" style="--i: 1"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-two">
+            <div class="custom-shape-divider-top-1666802966">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="title">Featured Products</div>
+            <div class="featured-products"></div>
+            <a href="store-page\books.html" target="_blank">ShopNow!</a>
+        </section>
+
+        <section class="section-three">
+            <div class="subscription">
+                <p>For getting subscribed to our newslatter and recieving a 20% discount on your first order, fill your
+                    e-mail address below!</p>
+                <form>
+                   <input type="email" class="email" placeholder="Introduce your e-mail">
+                   <input type="submit" class="submit">
+                </form>
+            </div>
+            <div class="socials">
+                <p>Find us in other places!</p>
+               <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+               </div>
+            </div>
+            <div class="location">
+                <p>Find us in our physical stores!</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5435.128022323025!2d28.01271769056001!3d45.567253862990455
+                    !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1666954718378!5m2!1sro!2sro"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shapedividers_com-2702">
+        <div class="text">©Coded by Magda</div>
+        <div class="pages">
+            <div class="title">
+                Pages
+            </div>
+            <a href="home-page\home.html">Home</a>
+            <a href="store-page\books.html">Store</a>
+            <a href="favorites-page\favorites.html">Your Favorites</a>
+            <a href="cart-page\cart.html">Cart</a>
+        </div>
+    </footer>
+    <script src="home-page\featuredProducts.js"></script>
+    <script src="for-all-pages\autofill.js"></script>
+    <script src="home-page\home.js"></script>
+    <script src="for-all-pages\script.js"></script>
+</body>
+
+</html>

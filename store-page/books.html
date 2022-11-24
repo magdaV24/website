@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="for-all-pages\styles.css">
+    <link rel="stylesheet" href="store-page\books.css">
+</head>
+<body>
+    <header>
+        <div class="bookstore-name"><a href="home.html">Athena</i></a></div>
+        <div class="wrapper">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-bar" type="text" placeholder="Search anything...">
+                <ul class="search-result"></ul>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="favorites-page\favorites.html" target="_blank">
+                <div class="heart-counter">
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="counter" id="heart-counter">0</div>
+                </div>
+            </a>
+            <a href="cart-page\cart.html" target="_blank"><div class="shop-counter">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="counter" id="cart-counter">0</div>
+            </div></a>
+        </div>
+        <div class="clock">
+            <div class="hours tile">0</div>
+            <div class="minutes tile">0</div>
+            <div class="seconds tile">0</div>
+        </div>
+        <div class="theme">
+            <i class="fa-solid fa-palette"></i>
+        </div>
+    </header>
+    <main>
+
+        <div class="random-quote">
+            <div class="quote-box">
+                <div class="quote">
+                    <i class="fa-solid fa-quote-left" style="color: var(--dull-blue)"></i>
+                    <div class="text">I would say, some people are like constellations that only touch the earth for a season.</div>
+                    <i class="fa-solid fa-quote-right" style="color: var(--dull-blue)"></i>
+                </div>
+                <div class="details">
+                    <div class="title">Circe </div>
+                    <div class="author">by Madeline Miller</div>
+                </div>
+            </div>
+            <div class="button-random">
+                <i class="fa-solid fa-book-bookmark"></i>
+            </div>
+        </div>
+
+        <div class="genere">
+            <nav class="generes">
+                <div class="pick"> Pick a genere</div>
+                <ul>
+                    <option value="modern-classic">Modern Classics</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="science-fiction">Science Fiction</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="philosophy">Philosophy</option>
+                    <option value="retelling">Retellings</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="classic">Classics</option>
+                    <option value="all">All of them</option>
+                </ul>
+            </nav>
+            <p class="info">Look amongst the books of your favorite genere that we have or get out of your comfort zone and pick something new!</p>
+        </div>
+
+        <div class="book-store">
+        </div>
+
+    </main>
+    <footer class="shapedividers_com-2702">
+        <div class="text">©Coded by Magda</div>
+        <div class="pages">
+            <div class="title">
+                Pages
+            </div>
+            <a href="home-page\home.html">Home</a>
+            <a href="store-page\books.html">Store</a>
+            <a href="favorites-page\favorites.html">Your Favorites</a>
+            <a href="cart-page\cart.html">Cart</a>
+        </div>
+    </footer>
+    
+    <script src="store-page\books.js"></script>
+    <script src="for-all-pages\quotes.js"></script>
+    <script src="for-all-pages\autofill.js"></script>
+    <script src="for-all-pages\script.js"></script>
+    <script src="store-page\store.js"></script>
+</body>
+</html>
