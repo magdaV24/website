@@ -1,5 +1,3 @@
-//previous script:
-
 function clock() {
     var hr = document.querySelector(".hours");
     var min = document.querySelector(".minutes");
@@ -64,8 +62,8 @@ const favItem = document.querySelectorAll(".container-fav");
 for(let i = 0; i < favorites.length; i++){
     delFavItem[i].addEventListener("click", function(){
         favItem[i].parentNode.removeChild(favItem[i]);
-        let x = favorites.indexOf(favItem[i]);
-        favorites = favorites.splice(x, 1);
+        favorites.splice(i, 1);
+        localStorage.setItem('favorites', JSON.stringify(favorites));
     });
 }
 
@@ -76,9 +74,25 @@ let cartCounter = document.querySelector("#cart-counter");
 let cartIndex = shoppingCart.length;
 cartCounter.innerHTML = cartIndex;
 
+let shoppingList = {
+    id: this.id,
+    cover: this.cover,
+    author: this.name,
+    title: this.title,
+    price: this.price
+}
+
 for(let i = 0; i < favorites.length; i++){
+    const book = Object.create(shoppingList);
+    
+    book.author = favItem[i].querySelector(".author").innerHTML;
+    book.title = favItem[i].querySelector(".title").innerHTML;
+    book.cover = favItem[i].querySelector(".cover").src;
+    book.price = favItem[i].querySelector(".price").innerHTML;
     cartBtn[i].addEventListener("click", function(){
-        localStorage.setItem("shopping-cart", JSON.stringify(parentFavItem[i]));
+        let x = JSON.parse(localStorage.getItem('shopping-list'))
+        shoppingCart.push(book);
+        localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
         cartIndex++;
         cartCounter.innerHTML = cartIndex;
     })
