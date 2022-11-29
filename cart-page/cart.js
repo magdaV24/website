@@ -102,8 +102,10 @@ for(let i = 0; i < shoppingCart.length; i++){
 
         qntIndex--;
         if(qntIndex < 1){
-            let x = shoppingCart.indexOf(book[i]);
-            shoppingCart = shoppingCart.splice(x, 1);
+            //let x = shoppingCart.indexOf(book[i]);
+            console.log(shoppingCart)
+            shoppingCart.splice(i, 1);
+            console.log(shoppingCart)
             localStorage.setItem("shopping-cart", JSON.stringify(shoppingCart));
             cartItem[i].parentNode.removeChild(cartItem[i]);
             total = arr[i] * qntIndex;
